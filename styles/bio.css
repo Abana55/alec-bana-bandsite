@@ -11,7 +11,6 @@ body {
   color: white;
 }
 .band__head--title {
-  align-items: center;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -40,6 +39,30 @@ body {
   font-size: 1.5rem;
 }
 
+.music {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+}
+.music__title {
+  font-size: 24px;
+  position: relative;
+}
+.music__ul {
+  list-style: none;
+  font-weight: 700;
+}
+.music__article {
+  display: flex;
+  flex-direction: column;
+}
+.music__name {
+  font-weight: 300;
+}
+.music__ul-2 {
+  list-style: none;
+  padding: 0;
+}
 .gallery {
   background-color: #E1E1E1;
   display: flex;

@@ -9,7 +9,6 @@ body {
     color: white;
 
     &__head--title {
-        align-items: center;
         font-size: 1.5rem;
         display: flex;
         justify-content: center;
@@ -43,6 +42,37 @@ body {
     font-size: 1.5rem;
 
 }
+
+.music {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+
+    &__title {
+        font-size: 24px;
+        position: relative;
+    }
+    &__ul {
+        list-style: none;
+        font-weight: 700;
+    }
+    &__article{
+       display: flex; 
+       flex-direction: column;
+    }
+    
+    &__name {
+        font-weight: 300;
+    }
+    &__ul-2 {
+        list-style: none;
+        padding: 0;
+    }
+    &__para-1 {
+        
+    }
+}
+
 .gallery {
     background-color: #E1E1E1;
     display: flex;
