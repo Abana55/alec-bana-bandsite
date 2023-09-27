@@ -2,6 +2,10 @@
   font-family: "Avenir Next";
 }
 
+body {
+  margin: 0;
+}
+
 .band {
   background-color: #323232;
   color: white;
@@ -9,51 +13,41 @@
 .band__head--title {
   align-items: center;
   font-size: 1.5rem;
-  height: 2rem;
   display: flex;
   justify-content: center;
   font-weight: 300;
-}
-.bandlink-1 {
-  width: 50%;
-}
-
-.band__head--navi {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  padding: 2rem;
 }
 
 .band__navi {
   display: flex;
-  border-bottom: 2px solid white;
+  justify-content: space-evenly;
 }
 .band__navilink-1 {
-  margin-left: auto;
+  width: 50%;
+  border-bottom: 4px solid white;
 }
+.band__navilink-2 {
+  width: 50%;
+}
+
 .band__head--img {
   background: url(/assets/images/hero-bio.jpg);
   background-size: cover;
   height: 30vh;
   display: flex;
   align-items: center;
-  margin: 0;
+  font-size: 1.5rem;
 }
 
 .gallery {
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
   background-color: #E1E1E1;
+  display: flex;
+  flex-wrap: wrap;
 }
 .gallery__img {
-  width: 100%;
-  height: -moz-min-content;
-  height: min-content;
-  margin: 1rem;
+  width: 90vw;
+  padding: 1rem;
 }
 
 .foot {
