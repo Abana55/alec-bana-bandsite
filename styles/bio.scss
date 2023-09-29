@@ -4,6 +4,7 @@
 body {
     margin: 0;
 }
+
 .band {
     background-color: #323232;
     color: white;
@@ -13,26 +14,44 @@ body {
         display: flex;
         justify-content: center;
         font-weight: 300;
-        padding: 2rem;
+        line-height: 2rem;
+        
 
     }
    
+    &__navi {
+        display: flex;
+        flex-direction: column;
+        &:hover {
+            border-bottom: 4px solid white;
+        }
+    
+        &--links {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+    
+        &--link-1 {
+            width: 50%;
+            border-bottom: 4px solid white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+    
+        }
+        &--link-2 {
+            width: 50%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+       
+    }
 }
 
-.band__navi {
-    display: flex;
-    justify-content: space-evenly;
-
-    &link-1 {
-        width: 50%;
-        border-bottom: 4px solid white;
-
-    }
-    &link-2 {
-        width: 50%;
-    }
-   
-}
 .band__head--img {
     background: url(/assets/images/hero-bio.jpg);
     background-size: cover;
@@ -40,6 +59,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    margin: auto;
 
 }
 
@@ -48,10 +68,18 @@ body {
     flex-direction: column;
     font-weight: 300;
 
+
     &__title {
-        font-size: 24px;
+        font-size: 1.5rem;
         position: relative;
     }
+    &__img {
+        height: 40vh;
+        width: 100vw;
+        margin: 1rem;
+
+    }
+
     &__ul {
         list-style: none;
         font-weight: 700;
@@ -75,12 +103,20 @@ body {
 
 .gallery {
     background-color: #E1E1E1;
-    display: flex;
-    flex-wrap: wrap;
     
     &__img {
-        width: 90vw;
-        padding: 1rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &--mod {
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            // flex-wrap: wrap;
+    
+            height: 30vh;
+        }
     }
 }
 
