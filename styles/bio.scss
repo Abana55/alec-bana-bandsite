@@ -110,9 +110,9 @@ body {
 
         &--mod {
             padding: 1rem;
-            width: 100%;
+            width: 90%;
             display: flex;
-            // flex-wrap: wrap;
+            
     
             height: 30vh;
         }
@@ -130,6 +130,7 @@ body {
         
         &--title {
             font-weight: 300;
+            padding-top: 2rem;
              
         }
         &--img {
@@ -140,6 +141,7 @@ body {
     &__contacts {
         list-style: none;
         text-decoration: none;
+        padding: 0;
 
     }
 

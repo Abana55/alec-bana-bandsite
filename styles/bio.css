@@ -95,7 +95,7 @@ body {
 }
 .gallery__img--mod {
   padding: 1rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   height: 30vh;
 }
@@ -111,6 +111,7 @@ body {
 }
 .foot__social--title {
   font-weight: 300;
+  padding-top: 2rem;
 }
 .foot__social--img {
   padding-right: 1.5rem;
@@ -118,4 +119,5 @@ body {
 .foot__contacts {
   list-style: none;
   text-decoration: none;
+  padding: 0;
 }/*# sourceMappingURL=bio.css.map */
