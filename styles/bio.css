@@ -11,18 +11,14 @@ body {
   color: white;
 }
 .band__head--title {
-  font-size: 1.5rem;
   display: flex;
   justify-content: center;
-  font-weight: 300;
-  line-height: 2rem;
+  height: 30vh;
+  width: 90vw;
 }
 .band__navi {
   display: flex;
   flex-direction: column;
-}
-.band__navi:hover {
-  border-bottom: 4px solid white;
 }
 .band__navi--links {
   display: flex;
@@ -33,7 +29,6 @@ body {
 }
 .band__navi--link-1 {
   width: 50%;
-  border-bottom: 4px solid white;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -43,6 +38,9 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+.band__navi:hover {
+  border-bottom: 4px solid white;
 }
 
 .band__head--img {
@@ -65,8 +63,8 @@ body {
   position: relative;
 }
 .music__img {
-  height: 40vh;
-  width: 100vw;
+  height: 35vh;
+  width: 90vw;
   margin: 1rem;
 }
 .music__ul {

@@ -10,21 +10,17 @@ body {
     color: white;
 
     &__head--title {
-        font-size: 1.5rem;
         display: flex;
         justify-content: center;
-        font-weight: 300;
-        line-height: 2rem;
-        
-
+        height: 30vh;
+        width: 90vw;
+       
     }
    
     &__navi {
         display: flex;
         flex-direction: column;
-        &:hover {
-            border-bottom: 4px solid white;
-        }
+        
     
         &--links {
             display: flex;
@@ -36,11 +32,9 @@ body {
     
         &--link-1 {
             width: 50%;
-            border-bottom: 4px solid white;
             margin: 0;
             display: flex;
             justify-content: center;
-    
         }
         &--link-2 {
             width: 50%;
@@ -48,7 +42,10 @@ body {
             display: flex;
             justify-content: center;
         }
+        &:hover {
+            border-bottom: 4px solid white;    
        
+        }
     }
 }
 
@@ -74,8 +71,8 @@ body {
         position: relative;
     }
     &__img {
-        height: 40vh;
-        width: 100vw;
+        height: 35vh;
+        width: 90vw;
         margin: 1rem;
 
     }
@@ -146,3 +143,11 @@ body {
     }
 
 }
+
+
+
+
+// need to 
+// add the media queriies
+// get the global to connect and setup 
+// tablet and desktop by finishing mobile

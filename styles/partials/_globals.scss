@@ -16,8 +16,7 @@
     &__navi {
         display: flex;
         flex-direction: column;
-        &:hover {
-            border-bottom: 4px solid white;
+        
         }
     
         &--links {
@@ -26,9 +25,7 @@
             margin: 0;
             padding: 0;
             align-items: center;
-            &:hover {
-                border-bottom: 4px solid white;
-            }
+          
         }
     
         &--link-1 {
@@ -37,6 +34,9 @@
             margin: 0;
             display: flex;
             justify-content: center;
+            &:hover {
+                border-bottom: 4px solid white;
+            }
     
         }
         &--link-2 {
@@ -44,10 +44,13 @@
             margin: 0;
             display: flex;
             justify-content: center;
+            &:hover {
+                border-bottom: 4px solid white;
+            }
         }
        
-    }
 }
+
 
 
 
