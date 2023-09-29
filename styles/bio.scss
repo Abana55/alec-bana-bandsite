@@ -96,13 +96,12 @@ body {
         list-style: none;
         padding: 0;
     }
-    &__para-1 {
-        
-    }
+    
 }
 
 .gallery {
     background-color: #E1E1E1;
+    
     
     &__img {
         width: 100%;
@@ -124,5 +123,24 @@ body {
     background-color: #323232;
     color: white;
     text-decoration: none;
+    padding-left: 1rem;
+
+    &__social {
+        font-weight: 300;
+        
+        &--title {
+            font-weight: 300;
+             
+        }
+        &--img {
+            padding-right: 1.5rem;
+        }
+        
+    }
+    &__contacts {
+        list-style: none;
+        text-decoration: none;
+
+    }
 
 }

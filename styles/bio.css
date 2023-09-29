@@ -84,6 +84,7 @@ body {
   list-style: none;
   padding: 0;
 }
+
 .gallery {
   background-color: #E1E1E1;
 }
@@ -102,5 +103,19 @@ body {
 .foot {
   background-color: #323232;
   color: white;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+.foot__social {
+  font-weight: 300;
+}
+.foot__social--title {
+  font-weight: 300;
+}
+.foot__social--img {
+  padding-right: 1.5rem;
+}
+.foot__contacts {
+  list-style: none;
   text-decoration: none;
 }/*# sourceMappingURL=bio.css.map */
