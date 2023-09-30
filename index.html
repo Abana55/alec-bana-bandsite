@@ -13,8 +13,8 @@
         <nav class="band__navi">
             <img src="/assets/Logo/Logo-bandsite.svg" class="band__head--title">
             <ul class="band__navi--links">
-                <p class="band__navi--link-1"><a>Biography</a></p>
-                <p class="band__navi--link-2"><a>Shows</a></p>
+                <li class="band__navi--link-1"><a class="band__navi">Biography</a></li>
+                <li class="band__navi--link-2"><a class="band__navi">Shows</a></li>
             </ul>
         </nav>
         <section class="band__head">
@@ -22,14 +22,17 @@
         </section>
     </header>
 
-    <main class="music">
+    <main>
+        <section class="music">
         <h2 class="music__title">About the Musicians</h2>
-        <img src="/assets/images/band.jpg" class="music__img">
+        <section class="music__">
+         <img src="/assets/images/band.jpg" class="music__img">
+        </section>
         <ul class="music__ul">
             <li class="music__quote">“We push each other to be the best. It’s not uncommon for one of us to say ‘this
                 needs to be better,
                 back to the drawing board’”</li>
-            <li class="music__author">Bryan Teddy, lead vocalist of The Bees Knees</li>
+            <li class="music__author">- Bryan Teddy, lead vocalist of The Bees Knees</li>
         </ul>
         <article class="music__article">
             <h3 class="music__name">The Bees Knees</h3>
@@ -54,8 +57,9 @@
                 </li>
             </ul>
         </article>
+        </section>
         <section class="gallery">
-            <h2>Photo Gallery</h2>
+            <h2 class="gallery__title">Photo Gallery</h2>
             <article class="gallery__img">
                 <img class="gallery__img--mod" src="/assets/images/Photo-gallery-2.jpg" alt="concert image1">
                 <img class="gallery__img--mod" src="/assets/images/Photo-gallery-1.jpg" alt="concert image2">
@@ -81,37 +85,35 @@
         <section class="foot__box">
             <section class="foot__contacts">
                 <ul class="foot__contacts">
-                    <li class="foot__">Cam Adams</li>
-                    <li class="foot__">The Bees Knees Management</li>
+                    <li class="foot__contacts--person">Cam Adams</li>
+                    <li class="foot__contacts--person">The Bees Knees Management</li>
                 </ul>
                 <ul class="foot__contacts">
-                    <li class="foot__">503 Broadway Penthouse, New York, NY 10012, USA</li>
+                    <li class="foot__contacts--address">503 Broadway Penthouse, New York, NY 10012, USA</li>
                 </ul>
-                <p class="foot__">info@thebeesknees.com</p>
+                    <p class="foot__contacts--email">info@thebeesknees.com</p>
             </section>
 
             <section class="foot__contacts">
                 <ul class="foot__contacts">
-                    <li class="foot__">Pearl Greg</li>
-                    <li class="foot__">Limitless Artist Group</li>
+                    <li class="foot__contacts--person">Pearl Greg</li>
+                    <li class="foot__contacts--person">Limitless Artist Group</li>
                 </ul>
-                <ul class="foot__">
-                    <li class="foot__contacts">Booking Agent for US / South America/ Japan</li>
-                </ul>
-                <p class="foot__">pearl.gregg@limitlessag.com</p>
+                    <p class="foot__contacts--booking">Booking Agent for US / South America/ Japan</p>
+                    <p class="foot__contacts--email">pearl.gregg@limitlessag.com</p>
             </section>
             <section class="foot__contacts">
                 <ul class="foot__contacts">
-                    <li class="foot__">Carson Whyte</li>
-                    <li class="foot__">ARCH Entertainment</li>
+                    <li class="foot__contacts--person">Carson Whyte</li>
+                    <li class="foot__contacts--person">ARCH Entertainment</li>
                 </ul>
                 <ul class="foot__contacts">
-                    <li class="foot__">Booking Agent for UK / EU / AU</li>
+                    <li class="foot__contacts--booking">Booking Agent for UK / EU / AU</li>
                 </ul>
-                <p class="foot__">cwhyte@archentertainment.com</p>
+                <p class="foot__contacts--email">cwhyte@archentertainment.com</p>
             </section>
-            <img src="/assets/Logo/Logo-bandsite.svg" class="foot__">
-            <p>Copyright The Bees Knees © 2021 All Rights Reserved</p>
+            <img src="/assets/Logo/Logo-bandsite.svg" class="foot__logo">
+                <p class="foot__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </section>
     </footer>
 </body>

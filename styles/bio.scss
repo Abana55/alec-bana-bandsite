@@ -1,3 +1,7 @@
+@use'./partials/globals' as *;
+@use'./partials/mixins' as *;
+@use'./partials/variables' as *;
+
 *{
     font-family: 'Avenir Next';
 }
@@ -11,15 +15,29 @@ body {
 
     &__head--title {
         display: flex;
-        justify-content: center;
-        height: 30vh;
-        width: 90vw;
+        height: 10vh;
+        width: 60vw;
+        text-align: center;
+        @include tablet {
+            height: 10vh;
+            width: 25vw;
+            
+        }
        
     }
    
     &__navi {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 70%;
+
+        }
         
     
         &--links {
@@ -27,91 +45,139 @@ body {
             flex-direction: row;
             margin: 0;
             padding: 0;
-            align-items: center;
         }
     
         &--link-1 {
+            font-size: 1.5rem;
             width: 50%;
-            margin: 0;
+            padding-right: 1rem;
             display: flex;
-            justify-content: center;
         }
         &--link-2 {
+            font-size: 1.5rem;
             width: 50%;
             margin: 0;
+            padding-left: 1rem;
             display: flex;
-            justify-content: center;
         }
         &:hover {
-            border-bottom: 4px solid white;    
+            border-bottom: 4px solid white;
+        
+            @include tablet{
+
+            }
        
         }
     }
+    &__head--img {
+        background: url(/assets/images/hero-bio.jpg);
+        background-size: cover;
+        height: 18vh;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        padding-left: 1rem;
+        font-weight: 500;
+        background-position: center;
+        @include tablet {
+            height: 48vh;
+            font-size: 3.75rem;
+        }
+    
+    }
 }
 
-.band__head--img {
-    background: url(/assets/images/hero-bio.jpg);
-    background-size: cover;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: auto;
 
-}
 
 .music {
     display: flex;
     flex-direction: column;
     font-weight: 300;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
 
     &__title {
         font-size: 1.5rem;
         position: relative;
+        @include tablet {
+            font-size: 2.25rem;
+        }
     }
     &__img {
-        height: 35vh;
-        width: 90vw;
-        margin: 1rem;
+        width: 100%;
+
 
     }
 
     &__ul {
         list-style: none;
-        font-weight: 700;
+        font-weight: 500;
+        padding: 0;
+
     }
     &__article{
        display: flex; 
        flex-direction: column;
     }
+    &__quote {
+        padding-bottom: 1rem;
+    }
     
     &__name {
-        font-weight: 300;
+        font-weight: 500;
+        margin: 0;
+        @include tablet {
+            font-size: 2.25rem;
+        }
     }
     &__ul-2 {
         list-style: none;
         padding: 0;
+
+    }
+    &__para-1 {
+        padding-bottom: 1rem;
     }
     
 }
 
 .gallery {
-    background-color: #E1E1E1;
-    
+    background-color: #FAFAFA;
+    @include tablet {
+        width: 100%;
+        
+    }
+
+    &__title {
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        @include tablet {
+            font-size: 2.25rem;
+        }
+    }
     
     &__img {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        @include tablet {
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+        }
 
         &--mod {
             padding: 1rem;
             width: 90%;
             display: flex;
+            @include tablet {
+                width: 29%;
+                object-fit: cover;
+                vertical-align: bottom;
+            }
             
     
-            height: 30vh;
         }
     }
 }
@@ -122,12 +188,17 @@ body {
     text-decoration: none;
     padding-left: 1rem;
 
+
+
     &__social {
         font-weight: 300;
         
         &--title {
             font-weight: 300;
             padding-top: 2rem;
+            @include tablet {
+                font-size: 2.25rem;
+            }
              
         }
         &--img {
@@ -135,11 +206,31 @@ body {
         }
         
     }
+
     &__contacts {
         list-style: none;
-        text-decoration: none;
         padding: 0;
+        font-weight: 700;
 
+        &--booking {
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+        }
+
+        &--address {
+            width: auto;
+            font-weight: 400;
+        }
+        &--email {
+            font-weight: 400;
+        }
+
+
+    }
+
+    &__logo {
+        padding-top: 3rem;
     }
 
 }
@@ -149,5 +240,4 @@ body {
 
 // need to 
 // add the media queriies
-// get the global to connect and setup 
 // tablet and desktop by finishing mobile
