@@ -47,6 +47,9 @@ body {
   padding-right: 1rem;
   display: flex;
 }
+.band__navi--link-1:hover {
+  border-bottom: 0.25rem solid white;
+}
 .band__navi--link-2 {
   font-size: 1.5rem;
   width: 50%;
@@ -54,13 +57,13 @@ body {
   padding-left: 1rem;
   display: flex;
 }
-.band__navi:hover {
-  border-bottom: 4px solid white;
+.band__navi--link-2:hover {
+  border-bottom: 0.25rem solid white;
 }
 .band__head--img {
   background: url(/assets/images/hero-bio.jpg);
   background-size: cover;
-  height: 18vh;
+  height: 40vh;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -72,6 +75,7 @@ body {
   .band__head--img {
     height: 92vh;
     font-size: 3.75rem;
+    margin: 0;
   }
 }
 
@@ -202,6 +206,7 @@ body {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+    justify-content: center;
   }
 }
 .gallery__img--mod {
@@ -228,6 +233,7 @@ body {
   .foot {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 1rem;
   }
 }
 .foot__social {
