@@ -1,12 +1,9 @@
-@use'./partials/mixins' as *;
-@use'./partials/variables' as *;
+@use'./mixins' as *;
+@use'./variables' as *;
 
 
 
 
-*{
-    font-family: 'Avenir Next';
-}
 body {
     margin: 0;
 }
@@ -39,6 +36,8 @@ body {
             flex-direction: row;
             flex-wrap: nowrap;
             width: 45vw;
+            height: 16vh;
+            padding-top: 2rem;
         }  
         &--links {
             display: flex;
@@ -141,6 +140,7 @@ body {
             }
         }
         
+        
     }
     &__box {
         @include tablet {
@@ -205,6 +205,3 @@ body {
     }
 
 }
-
-
-
