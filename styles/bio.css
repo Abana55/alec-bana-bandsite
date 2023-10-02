@@ -48,6 +48,7 @@ body {
   width: 100vw;
   text-decoration: none;
   list-style: none;
+  padding-top: 1rem;
 }
 .band__navi--link-1 {
   width: 50%;
