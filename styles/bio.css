@@ -1,3 +1,7 @@
+* {
+  font-family: "Avenir Next";
+}
+
 body {
   margin: 0;
 }
@@ -33,8 +37,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 45vw;
-    height: 16vh;
-    padding-top: 2rem;
+    height: 7vh;
   }
 }
 .band__navi--links {
@@ -45,7 +48,6 @@ body {
   width: 100vw;
   text-decoration: none;
   list-style: none;
-  padding-top: 1rem;
 }
 .band__navi--link-1 {
   width: 50%;
@@ -65,7 +67,7 @@ body {
   padding-bottom: 1rem;
   border-bottom: 1px #FAFAFA;
 }
-.band__navi__head--img {
+.band__head--img {
   background: url(/assets/images/hero-bio.jpg);
   background-size: cover;
   height: 40vh;
@@ -78,14 +80,14 @@ body {
   margin: 0;
 }
 @media (min-width: 768px) {
-  .band__navi__head--img {
+  .band__head--img {
     height: 92vh;
     font-size: 3.75rem;
     margin: 0;
   }
 }
 @media (min-width: 1280px) {
-  .band__navi__head--img {
+  .band__head--img {
     padding-left: 8rem;
     height: 140vh;
   }
@@ -202,102 +204,6 @@ body {
     position: absolute;
     top: 0rem;
     right: 9rem;
-  }
-}
-
-* {
-  font-family: "Avenir Next";
-}
-
-body {
-  margin: 0;
-}
-
-.band {
-  background-color: #323232;
-  color: white;
-}
-.band__head--title {
-  display: flex;
-  height: 1.25rem;
-  width: 60vw;
-  text-align: center;
-  padding-top: 1.5rem;
-}
-@media (min-width: 768px) {
-  .band__head--title {
-    height: 1.25rem;
-    padding-right: 2rem;
-    padding-left: 0;
-    padding-top: 0;
-    width: 20vw;
-  }
-}
-.band__navi {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .band__navi {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 45vw;
-    height: 16vh;
-    padding-top: 2rem;
-  }
-}
-.band__navi--links {
-  display: flex;
-  flex-direction: row;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  text-decoration: none;
-  list-style: none;
-}
-.band__navi--link-1 {
-  width: 50%;
-  padding-right: 0rem;
-  border-bottom: 0.1875rem solid white;
-  display: flex;
-  justify-content: center;
-}
-.band__navi--link-2 {
-  width: 50%;
-  margin: 0;
-  padding-left: 3rem;
-  display: flex;
-  justify-content: center;
-}
-.band__navi--anchor {
-  padding-bottom: 1rem;
-  border-bottom: 1px #FAFAFA;
-}
-.band__head--img {
-  background: url(/assets/images/hero-bio.jpg);
-  background-size: cover;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  padding-left: 1rem;
-  font-weight: 500;
-  background-position: center;
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .band__head--img {
-    height: 92vh;
-    font-size: 3.75rem;
-    margin: 0;
-  }
-}
-@media (min-width: 1280px) {
-  .band__head--img {
-    padding-left: 8rem;
-    height: 140vh;
   }
 }
 
@@ -470,13 +376,16 @@ body {
   }
 }
 .gallery__img {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .gallery__img {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
 }
@@ -498,119 +407,5 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     vertical-align: bottom;
-  }
-}
-
-.foot {
-  background-color: #323232;
-  color: white;
-  text-decoration: none;
-  padding-left: 1rem;
-}
-@media (min-width: 768px) {
-  .foot {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    position: relative;
-  }
-}
-@media (min-width: 1280px) {
-  .foot {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-}
-.foot__social {
-  font-weight: 300;
-}
-@media (min-width: 768px) {
-  .foot__social {
-    display: flex;
-    padding-top: 2rem;
-    align-items: center;
-    height: 10vh;
-  }
-}
-.foot__social--title {
-  font-weight: 400;
-  padding-top: 2rem;
-}
-@media (min-width: 768px) {
-  .foot__social--title {
-    font-size: 2rem;
-    padding: 0;
-    font-weight: 600;
-  }
-}
-.foot__social--img {
-  padding-right: 1.5rem;
-}
-@media (min-width: 768px) {
-  .foot__social--img {
-    height: 5vh;
-    padding-left: 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .foot__box {
-    display: flex;
-    padding-top: 2rem;
-  }
-}
-.foot__contacts {
-  list-style: none;
-  padding: 0;
-  font-weight: 700;
-}
-@media (min-width: 768px) {
-  .foot__contacts {
-    margin: 0;
-  }
-}
-.foot__contacts--booking {
-  margin: 0;
-  padding: 0;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  .foot__contacts--booking {
-    width: 73%;
-    padding-top: 1rem;
-  }
-}
-.foot__contacts--address {
-  width: auto;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  .foot__contacts--address {
-    width: 72%;
-    padding-top: 1rem;
-  }
-}
-.foot__contacts--email {
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  .foot__contacts--email {
-    margin: 0;
-    padding-top: 1rem;
-  }
-}
-@media (min-width: 768px) {
-  .foot__copyright {
-    padding-top: 3rem;
-  }
-}
-.foot__logo {
-  padding-top: 3rem;
-  height: 1.25rem;
-}
-@media (min-width: 768px) {
-  .foot__logo {
-    position: absolute;
-    top: 0rem;
-    right: 9rem;
   }
 }/*# sourceMappingURL=bio.css.map */

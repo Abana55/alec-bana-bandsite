@@ -2,98 +2,6 @@
 @use'./partials/variables' as *;
 @use'./partials/globals' as *;
 
-* {
-    font-family: 'Avenir Next';
-}
-body {
-    margin: 0;
-}
-
-.band {
-    background-color: #323232;
-    color: white;
-
-    &__head--title {
-        display: flex;
-        height: 1.25rem;
-        width: 60vw;
-        text-align: center;
-        padding-top: 1.5rem;
-        @include tablet {
-            height: 1.25rem;
-            padding-right: 2rem;
-            padding-left: 0;
-            padding-top: 0;
-            width: 20vw;  
-        }      
-    }
-   
-    &__navi {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        @include tablet {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            width: 45vw;
-            height: 16vh;
-            padding-top: 2rem;
-        }  
-        &--links {
-            display: flex;
-            flex-direction: row;
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            text-decoration: none;
-            list-style: none;
-        }
-        &--link-1 {
-            width: 50%;
-            padding-right: 0rem;
-            border-bottom: .1875rem solid white;
-            display: flex;
-            justify-content: center;
-
-        }
-        &--link-2 {
-            width: 50%;
-            margin: 0;
-            padding-left: 3rem;
-            display: flex;
-            justify-content: center;
-        }
-        &--anchor {
-            padding-bottom: 1rem;
-            border-bottom: 1px #FAFAFA;
-        }
-    }
-    &__head--img {
-        background: url(/assets/images/hero-bio.jpg);
-        background-size: cover;
-        height: 40vh;
-        display: flex;
-        align-items: center;
-        font-size: 2rem;
-        padding-left: 1rem;
-        font-weight: 500;
-        background-position: center;
-        margin: 0;
-        @include tablet {
-            height: 92vh;
-            font-size: 3.75rem;
-            margin: 0;
-        }
-
-        @include desktop {
-            padding-left: 8rem;
-            height: 140vh;
-        }
-    }   
-}
-
-
 .music {
     display: flex;
     flex-direction: column;
@@ -237,11 +145,14 @@ body {
     }
     
     &__img {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @include tablet {
             width: 100%;
             flex-wrap: wrap;
             display: flex;
+            flex-direction: row;
             justify-content: center;
         }
         @include desktop {
@@ -264,116 +175,4 @@ body {
         }
     }
 }
-
-.foot {
-    background-color: #323232;
-    color: white;
-    text-decoration: none;
-    padding-left: 1rem;
-    @include tablet {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 1rem;
-        position: relative;
-    }
-    @include desktop {
-        padding-left: 8rem;
-        padding-right: 8rem;
-    }
-
-
-
-    &__social {
-        font-weight: 300;
-        @include tablet {
-            display: flex;
-            padding-top: 2rem;
-            align-items: center;
-            height: 10vh;
-            
-        }
-        
-        &--title {
-            font-weight: 400;
-            padding-top: 2rem;
-            @include tablet {
-                font-size: 2rem;
-                padding: 0;
-                font-weight: 600;
-            }
-             
-        }
-        &--img {
-            padding-right: 1.5rem;
-            @include tablet {
-                height: 5vh;
-                padding-left: 2rem;
-            }
-        }
-        
-    }
-    &__box {
-        @include tablet {
-            display: flex;
-            padding-top: 2rem;
-        }
-    }
-
-    &__contacts {
-        list-style: none;
-        padding: 0;
-        font-weight: 700;
-        @include tablet {
-            margin: 0;
-
-        }
-
-        &--booking {
-            margin: 0;
-            padding: 0;
-            font-weight: 400;
-            @include tablet {
-                width: 73%;
-                padding-top: 1rem;
-            }
-        }
-
-        &--address {
-            width: auto;
-            font-weight: 400;
-            @include tablet {
-                width: 72%;
-                padding-top: 1rem;
-            }
-        }
-        &--email {
-            font-weight: 400;
-            @include tablet {
-                margin:0;
-                padding-top: 1rem;
-            }
-        }
-
-
-    }
-    &__copyright {
-        @include tablet {
-            padding-top: 3rem;
-        }
-    }
-
-    &__logo {
-        padding-top: 3rem;
-        height: 1.25rem;
-        @include tablet {
-            position: absolute;
-            top: 0rem;
-            right: 9rem;
-            
-
-        }
-    }
-
-}
-
 

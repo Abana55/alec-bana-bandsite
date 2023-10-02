@@ -2,8 +2,9 @@
 @use'./variables' as *;
 
 
-
-
+* {
+    font-family: 'Avenir Next';
+}
 body {
     margin: 0;
 }
@@ -36,8 +37,7 @@ body {
             flex-direction: row;
             flex-wrap: nowrap;
             width: 45vw;
-            height: 16vh;
-            padding-top: 2rem;
+            height: 7vh;
         }  
         &--links {
             display: flex;
@@ -47,8 +47,6 @@ body {
             width: 100vw;
             text-decoration: none;
             list-style: none;
-            padding-top: 1rem;
-
         }
         &--link-1 {
             width: 50%;
@@ -69,6 +67,7 @@ body {
             padding-bottom: 1rem;
             border-bottom: 1px #FAFAFA;
         }
+    }
     &__head--img {
         background: url(/assets/images/hero-bio.jpg);
         background-size: cover;
@@ -91,7 +90,6 @@ body {
             height: 140vh;
         }
     }   
-}
 }
 
 .foot {
@@ -139,7 +137,6 @@ body {
                 padding-left: 2rem;
             }
         }
-        
         
     }
     &__box {
