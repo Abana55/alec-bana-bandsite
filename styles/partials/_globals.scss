@@ -38,6 +38,7 @@ body {
             flex-wrap: nowrap;
             width: 45vw;
             height: 7vh;
+            padding-top: 2rem
         }  
         &--links {
             display: flex;
@@ -80,14 +81,14 @@ body {
         background-position: center;
         margin: 0;
         @include tablet {
-            height: 92vh;
+            height: 75vh;
             font-size: 3.75rem;
             margin: 0;
         }
 
         @include desktop {
             padding-left: 8rem;
-            height: 140vh;
+            height: 80vh;
         }
     }   
 }
@@ -133,7 +134,7 @@ body {
         &--img {
             padding-right: 1.5rem;
             @include tablet {
-                height: 5vh;
+                height: 3vh;
                 padding-left: 2rem;
             }
         }
@@ -184,6 +185,8 @@ body {
 
     }
     &__copyright {
+        padding-bottom: 1rem;
+        margin: 0;
         @include tablet {
             padding-top: 3rem;
         }

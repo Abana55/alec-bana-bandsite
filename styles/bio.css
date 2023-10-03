@@ -38,6 +38,7 @@ body {
     flex-wrap: nowrap;
     width: 45vw;
     height: 7vh;
+    padding-top: 2rem;
   }
 }
 .band__navi--links {
@@ -81,7 +82,7 @@ body {
 }
 @media (min-width: 768px) {
   .band__head--img {
-    height: 92vh;
+    height: 75vh;
     font-size: 3.75rem;
     margin: 0;
   }
@@ -89,7 +90,7 @@ body {
 @media (min-width: 1280px) {
   .band__head--img {
     padding-left: 8rem;
-    height: 140vh;
+    height: 80vh;
   }
 }
 
@@ -140,7 +141,7 @@ body {
 }
 @media (min-width: 768px) {
   .foot__social--img {
-    height: 5vh;
+    height: 3vh;
     padding-left: 2rem;
   }
 }
@@ -189,6 +190,10 @@ body {
     margin: 0;
     padding-top: 1rem;
   }
+}
+.foot__copyright {
+  padding-bottom: 1rem;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .foot__copyright {
@@ -276,13 +281,16 @@ body {
 }
 @media (min-width: 768px) {
   .music__quote {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-left: 2rem;
+    width: 68%;
   }
 }
 @media (min-width: 1280px) {
   .music__quote {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    width: 77%;
+    font-weight: 600;
   }
 }
 @media (min-width: 768px) {
