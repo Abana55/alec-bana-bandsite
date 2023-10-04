@@ -67,19 +67,28 @@ body {
         &--anchor {
             padding-bottom: 1rem;
             border-bottom: 1px #FAFAFA;
+            text-decoration: none;
+            color: white;
         }
     }
-    &__head--img {
+    &__head{
         background: url(/assets/images/hero-bio.jpg);
         background-size: cover;
         height: 40vh;
         display: flex;
         align-items: center;
-        font-size: 2rem;
-        padding-left: 1rem;
-        font-weight: 500;
         background-position: center;
         margin: 0;
+        z-index: 1;
+        position: relative;
+        &::before {
+            content:"";
+            position:absolute;
+            inset:0;
+            background-color: #323232;
+            opacity: 50%;
+            z-index: -1;
+        }
         @include tablet {
             height: 75vh;
             font-size: 3.75rem;
@@ -90,7 +99,18 @@ body {
             padding-left: 8rem;
             height: 80vh;
         }
-    }   
+        &--img {
+        font-size: 2rem;
+        padding-left: 1rem;
+        font-weight: 500;
+        background-position: center;
+        margin: 0;
+        @include tablet{
+            font-size: 3.75rem;
+        }
+            
+        }   
+    }
 }
 
 .foot {

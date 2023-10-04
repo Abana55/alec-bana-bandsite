@@ -1,181 +1,174 @@
-@use'./partials/mixins' as *;
-@use'./partials/variables' as *;
-@use'./partials/globals' as *;
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+@use "./partials/globals" as *;
 
 .music {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &__title {
+    font-size: 1.5rem;
+    position: relative;
+    color: #323232;
+    @include tablet {
+      font-size: 2rem;
+      font-weight: 500;
+      padding-left: 1rem;
+    }
+    @include desktop {
+      padding-left: 8rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+  &__img {
+    width: 100%;
+    @include tablet {
+      padding: 4rem;
+      padding-bottom: 2rem;
+      padding-top: 0;
+      width: 85%;
+    }
+    @include desktop {
+      padding-left: 13rem;
+      width: 70%;
+    }
+  }
+
+  &__ul {
+    list-style: none;
+    font-weight: 500;
+    padding: 0;
+    @include tablet {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+    }
+    @include desktop {
+      width: 72vw;
+      padding-left: 11rem;
+    }
+  }
+  &__article {
     display: flex;
     flex-direction: column;
-    font-weight: 300;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  }
+  &__quote {
+    padding-bottom: 1rem;
+    @include tablet {
+      font-size: 1.25rem;
+      padding-left: 2rem;
+      width: 68%;
+    }
+    @include desktop {
+      font-size: 1.5rem;
+      width: 77%;
+      font-weight: 600;
+    }
+  }
+  &__author {
+    @include tablet {
+      font-size: 1rem;
+      padding-left: 2rem;
+    }
+    @include desktop {
+      font-size: 1.25rem;
+    }
+  }
 
-
-    &__title {
-        font-size: 1.5rem;
-        position: relative;
-        @include tablet {
-            font-size: 2rem;
-            font-weight: 500;
-            padding-left: 1rem;
-        }
-        @include desktop {
-            padding-left: 8rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-    
+  &__name {
+    font-weight: 500;
+    margin: 0;
+    @include tablet {
+      font-size: 2rem;
+      padding-left: 4rem;
     }
-    &__img {
-        width: 100%;
-        @include tablet {
-            padding: 4rem;
-            padding-bottom: 2rem;
-            padding-top: 0;
-            width: 85%;
-        }
-        @include desktop {
-            padding-left: 13rem;
-            width: 70%;
-        }
+    @include desktop {
+      padding-left: 12rem;
     }
-
-    &__ul {
-        list-style: none;
-        font-weight: 500;
-        padding: 0;
-        @include tablet {
-            padding-left: 2rem;
-            padding-right: 2rem;
-            padding-bottom: 2rem;
-        }
-        @include desktop {
-            width: 72vw;
-            padding-left: 11rem;
-        }
-
+  }
+  &__ul-2 {
+    list-style: none;
+    padding: 0;
+    @include tablet {
+      display: flex;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      font-size: 1rem;
+      width: 86%;
     }
-    &__article{
-       display: flex; 
-       flex-direction: column;
+    @include desktop {
+      width: 72%;
+      padding-left: 12rem;
     }
-    &__quote {
-        padding-bottom: 1rem;
-        @include tablet {
-            font-size: 1.25rem;
-            padding-left: 2rem;
-            width: 68%;
-        }
-        @include desktop {
-            font-size: 1.5rem;
-            width: 77%;
-            font-weight: 600;
-        }
+  }
+  &__para-1 {
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-right: 2rem;
+      line-height: 1.75rem;
     }
-    &__author {
-        @include tablet {
-            font-size: 1rem;
-            padding-left: 2rem;
-        }
-        @include desktop {
-            font-size: 1.25rem;
-        }
+  }
+  &__para-2 {
+    padding-bottom: 1rem;
+    @include tablet {
+      padding-right: 1rem;
+      line-height: 1.75rem;
     }
-    
-    &__name {
-        font-weight: 500;
-        margin: 0;
-        @include tablet {
-            font-size: 2rem;
-            padding-left: 4rem;
-        }
-        @include desktop {
-            padding-left: 12rem;
-        }
-    }
-    &__ul-2 {
-        list-style: none;
-        padding: 0;
-        @include tablet {
-            display: flex;
-            padding-left: 4rem;
-            padding-right: 4rem;
-            font-size: 1rem;
-            width: 86%;
-        }
-        @include desktop {
-            width: 72%;
-            padding-left: 12rem;
-        }
-
-    }
-    &__para-1 {
-        padding-bottom: 1rem;
-        @include tablet {
-            padding-right: 2rem;
-            line-height: 1.75rem;
-        }
-    }
-    &__para-2 {
-        padding-bottom: 1rem;
-        @include tablet {
-            padding-right: 1rem;
-            line-height: 1.75rem;
-        }
-    }
-    
+  }
 }
 
 .gallery {
-    background-color: #FAFAFA;
+  background-color: #fafafa;
+  @include tablet {
+    width: 100%;
+  }
+
+  &__title {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #323232;
     @include tablet {
-        width: 100%;
-        
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    @include desktop {
+      padding-left: 8rem;
+      padding-top: 2rem;
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include desktop {
+      width: 93%;
+      padding-left: 4rem;
+      padding-bottom: 2rem;
     }
 
-    &__title {
-        padding-left: 1rem;
-        padding-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-        @include tablet {
-            font-size: 2rem;
-            font-weight: 600;
-        }
-        @include desktop {
-            padding-left: 8rem;
-            padding-top: 2rem;
-        }
+    &--mod {
+      padding: 1rem;
+      width: 90%;
+      display: flex;
+      @include tablet {
+        width: 29%;
+        object-fit: cover;
+        vertical-align: bottom;
+      }
     }
-    
-    &__img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        @include tablet {
-            width: 100%;
-            flex-wrap: wrap;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        @include desktop {
-            width: 93%;
-            padding-left: 4rem;
-            padding-bottom: 2rem;
-        }
-
-        &--mod {
-            padding: 1rem;
-            width: 90%;
-            display: flex;
-            @include tablet {
-                width: 29%;
-                object-fit: cover;
-                vertical-align: bottom;
-            }
-            
-    
-        }
-    }
+  }
 }
-

@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("opentype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/Font/AlternativeFiles/AvenirNextLTPro.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/Font/AlternativeFiles/AvenirNextLTProDemi.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Avenir";
+  src: url(../../assets/Font/AlternativeFiles/AvenirNextLTProBold.ttf) format("truetype");
+  font-weight: 700;
+}
 * {
   font-family: "Avenir Next";
 }
@@ -67,13 +97,42 @@ body {
 .band__navi--anchor {
   padding-bottom: 1rem;
   border-bottom: 1px #FAFAFA;
+  text-decoration: none;
+  color: white;
 }
-.band__head--img {
+.band__head {
   background: url(/assets/images/hero-bio.jpg);
   background-size: cover;
   height: 40vh;
   display: flex;
   align-items: center;
+  background-position: center;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+.band__head::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #323232;
+  opacity: 50%;
+  z-index: -1;
+}
+@media (min-width: 768px) {
+  .band__head {
+    height: 75vh;
+    font-size: 3.75rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .band__head {
+    padding-left: 8rem;
+    height: 80vh;
+  }
+}
+.band__head--img {
   font-size: 2rem;
   padding-left: 1rem;
   font-weight: 500;
@@ -82,15 +141,7 @@ body {
 }
 @media (min-width: 768px) {
   .band__head--img {
-    height: 75vh;
     font-size: 3.75rem;
-    margin: 0;
-  }
-}
-@media (min-width: 1280px) {
-  .band__head--img {
-    padding-left: 8rem;
-    height: 80vh;
   }
 }
 
@@ -222,6 +273,7 @@ body {
 .music__title {
   font-size: 1.5rem;
   position: relative;
+  color: #323232;
 }
 @media (min-width: 768px) {
   .music__title {
@@ -358,7 +410,7 @@ body {
 }
 
 .gallery {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 @media (min-width: 768px) {
   .gallery {
@@ -370,6 +422,7 @@ body {
   padding-top: 1rem;
   font-size: 1.5rem;
   font-weight: 400;
+  color: #323232;
 }
 @media (min-width: 768px) {
   .gallery__title {
