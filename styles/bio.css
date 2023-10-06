@@ -1,35 +1,18 @@
 @font-face {
   font-family: "Avenir";
-  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("opentype");
-  font-weight: 400;
+  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTPro.ttf") format(truetype) font-weight 400;
 }
 @font-face {
   font-family: "Avenir";
-  src: url(../../assets/Font/AvenirNextLTPro-Demi.otf) format("opentype");
-  font-weight: 600;
+  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProDemi.ttf") format(truetype) font-weight 600;
 }
 @font-face {
   font-family: "Avenir";
-  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf) format("opentype");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url(../../assets/Font/AlternativeFiles/AvenirNextLTPro.ttf) format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url(../../assets/Font/AlternativeFiles/AvenirNextLTProDemi.ttf) format("truetype");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Avenir";
-  src: url(../../assets/Font/AlternativeFiles/AvenirNextLTProBold.ttf) format("truetype");
+  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 * {
-  font-family: "Avenir Next";
+  font-family: "Avenir";
 }
 
 body {
@@ -469,4 +452,54 @@ body {
        object-fit: cover;
     vertical-align: bottom;
   }
+}
+
+.comment__submission {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-bottom: 1px solid black;
+}
+.comment__button {
+  border-style: none;
+  background-color: #323232;
+  color: white;
+  border-radius: 0.25rem;
+}
+.comment__button :hover {
+  color: #000000;
+}
+.comment__name-input {
+  border-radius: 0.25rem;
+}
+.comment__comment-input {
+  border-radius: 0.25rem;
+}
+.comment__box {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #323232;
+  width: 90%;
+}
+.comment__section {
+  flex-wrap: wrap;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.comment__name {
+  color: black;
+}
+.comment__date {
+  color: #323232;
+}
+.comment__container {
+  height: 100%;
+}
+.comment__icon {
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
 }/*# sourceMappingURL=bio.css.map */

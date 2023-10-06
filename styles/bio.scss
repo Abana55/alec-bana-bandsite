@@ -172,3 +172,56 @@
     }
   }
 }
+.comment {
+  &__submission {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+  }
+  &__button{
+    border-style: none;
+    background-color: #323232;
+    color: white;
+    border-radius: .25rem;
+    :hover {
+      color: #000000;
+    }
+  }
+  &__name-input {
+    border-radius: .25rem;
+  }
+  &__comment-input {
+    border-radius: .25rem;
+  }
+  &__box{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #323232;
+    width: 90%;
+
+  }
+  &__section {
+    flex-wrap: wrap;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  &__name {
+    color: black;
+  }
+  &__date {
+    color: #323232;
+  }
+  &__container {
+    height: 100%;
+  }
+  &__icon{
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+  }
+
+}
