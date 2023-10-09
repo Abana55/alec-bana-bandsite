@@ -7,6 +7,7 @@
 }
 body {
     margin: 0;
+    background-color: white;
 }
 
 .band {
@@ -27,6 +28,12 @@ body {
             width: 20vw;  
         }      
     }
+    &__heading {
+        @include tablet {
+            font-size: 2rem;
+            padding-left: 1rem;
+        }
+    }
    
     &__navi {
         display: flex;
@@ -37,7 +44,7 @@ body {
             flex-direction: row;
             flex-wrap: nowrap;
             width: 45vw;
-            height: 7vh;
+            height: 5vh;
             padding-top: 2rem
         }  
         &--links {
@@ -52,9 +59,13 @@ body {
         &--link-1 {
             width: 50%;
             padding-right: 0rem;
-            border-bottom: .1875rem solid white;
             display: flex;
             justify-content: center;
+            :hover {
+                border-bottom: .1875rem solid white;
+                font-weight: 500;
+                width: 50%;
+            }
 
         }
         &--link-2 {
@@ -63,6 +74,18 @@ body {
             padding-left: 3rem;
             display: flex;
             justify-content: center;
+            :hover {
+                border-bottom: .1875rem solid white;
+                font-weight: 500;
+            }
+        }
+        &--link-1.active {
+            font-weight: 700;
+            border-bottom: .1875rem solid white;
+        }
+        &--link-2.active {
+            font-weight: 700;
+            border-bottom: .1875rem solid white;
         }
         &--anchor {
             padding-bottom: 1rem;
@@ -111,8 +134,43 @@ body {
             
         }   
     }
-}
+    &__head-2{
+        background: url(/assets/images/hero-shows.jpg);
+        background-size: cover;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        background-position: center;
+        margin: 0;
+        z-index: 1;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        &::before {
+            content:"";
+            position:absolute;
+            inset:0;
+            background-color: #323232;
+            opacity: 50%;
+            z-index: -1;
+        }
+        @include tablet {
+            height: 75vh;
+            font-size: 3.75rem;
+            margin: 0;
+        }
 
+        @include desktop {
+            padding-left: 8rem;
+            height: 80vh;
+        }
+    }
+    &__heading {
+        display: flex;
+        margin: 0;
+        width: 90%;
+    }
+}
 .foot {
     background-color: #323232;
     color: white;

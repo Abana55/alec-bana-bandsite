@@ -3,3 +3,80 @@
 @use "./partials/globals" as *;
 
 
+.show {
+    &__section {
+        padding: 1rem;
+    }
+    &__box {
+        border-bottom: .0625rem solid #E1E1E1;
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 1.5rem 1.125rem;
+        }
+        :hover {
+            background-color: #FAFAFA;
+        }
+        & .show__date,
+        & .show__venue,
+        & .show__location {
+            @include tablet {
+                display: none;
+            }
+        }
+        &:first-of-type {
+            & .show__date,
+            & .shows__venue,
+            & .shows__location {
+                @include tablet {
+                    display: block;
+                }
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        padding: 1rem;
+        @include tablet {
+            font-size: 3.75rem;
+            padding-left: 2rem;
+        }
+    }
+    &__date {
+        color: #AFAFAF;
+        @include tablet {
+
+        }
+    }
+
+    &__time {
+        font-weight: 600;
+    }
+    &__venue {
+        color: #AFAFAF;
+        @include tablet {
+        }
+    }
+    &__location {
+        color: #AFAFAF;
+        @include tablet {
+        }
+
+    }
+    &__button {
+        height: 5vh;
+        width: 90vw;
+        background-color: #323232;
+        color: white;
+        border-radius: .25rem;
+        border-style: none;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        @include tablet {
+            width: 20vw;
+
+        }
+    }
+}
