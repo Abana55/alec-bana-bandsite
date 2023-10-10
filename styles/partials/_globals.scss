@@ -34,7 +34,6 @@ body {
             padding-left: 1rem;
         }
     }
-   
     &__navi {
         display: flex;
         flex-wrap: wrap;
@@ -51,10 +50,13 @@ body {
             display: flex;
             flex-direction: row;
             margin: 0;
-            padding: 0;
+            padding-top: 1rem;
             width: 100vw;
             text-decoration: none;
             list-style: none;
+            @include tablet {
+                padding-top: 0;
+            }
         }
         &--link-1 {
             width: 50%;
@@ -130,6 +132,8 @@ body {
         margin: 0;
         @include tablet{
             font-size: 3.75rem;
+            height: 15vh;
+            padding-top: 1rem;
         }
             
         }   
@@ -139,9 +143,7 @@ body {
         background-size: cover;
         height: 40vh;
         display: flex;
-        align-items: center;
         background-position: center;
-        margin: 0;
         z-index: 1;
         position: relative;
         flex-direction: column;
@@ -155,20 +157,50 @@ body {
             z-index: -1;
         }
         @include tablet {
-            height: 75vh;
+            height: 60vh;
             font-size: 3.75rem;
-            margin: 0;
+            padding-left: 2rem;
         }
 
         @include desktop {
-            padding-left: 8rem;
-            height: 80vh;
+            height: 65vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    &__box-1 {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+    }
+    &__box-2 {
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+
         }
     }
     &__heading {
         display: flex;
         margin: 0;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+    }
+    &__iframe {
         width: 90%;
+        padding-top: 1rem;
+        height: 10vh;
+        @include tablet {
+            width: 75vw;
+            height: 11vh;
+        }
+        @include desktop {
+            width: 35vw;
+            height: 12vh;
+        }
     }
 }
 .foot {

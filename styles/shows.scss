@@ -2,81 +2,86 @@
 @use "./partials/variables" as *;
 @use "./partials/globals" as *;
 
-
 .show {
-    &__section {
-        padding: 1rem;
+  &__contents {
+    @include desktop {
+      display: flex;
+      justify-content: space-evenly;
     }
-    &__box {
-        border-bottom: .0625rem solid #E1E1E1;
-        @include tablet {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding: 1.5rem 1.125rem;
-        }
-        :hover {
-            background-color: #FAFAFA;
-        }
-        & .show__date,
-        & .show__venue,
-        & .show__location {
-            @include tablet {
-                display: none;
-            }
-        }
-        &:first-of-type {
-            & .show__date,
-            & .shows__venue,
-            & .shows__location {
-                @include tablet {
-                    display: block;
-                }
-            }
-        }
+  }
+  &__section {
+    padding: 1rem;
+    padding-bottom: 3rem;
+    @include desktop {
+      width: 60vw;
     }
-    &__title {
-        margin: 0;
-        padding: 1rem;
-        @include tablet {
-            font-size: 3.75rem;
-            padding-left: 2rem;
-        }
-    }
-    &__date {
-        color: #AFAFAF;
-        @include tablet {
-
-        }
+    :hover {
+        background-color: #FAFAFA;
     }
 
-    &__time {
-        font-weight: 600;
-    }
-    &__venue {
-        color: #AFAFAF;
-        @include tablet {
+  }
+  &__box {
+    border-bottom: 0.0625rem solid #e1e1e1;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1.5rem 1.125rem;
+      align-items: center;
+      &:nth-child(n+2) {
+        .show__date, .show__venue, .show__location {
+            display: none;
         }
+      }
     }
-    &__location {
-        color: #AFAFAF;
-        @include tablet {
-        }
-
+  }
+  &__title {
+    margin: 0;
+    padding: 1rem;
+    @include tablet {
+      font-size: 3.75rem;
+      padding-left: 2rem;
     }
-    &__button {
-        height: 5vh;
-        width: 90vw;
-        background-color: #323232;
-        color: white;
-        border-radius: .25rem;
-        border-style: none;
-        font-size: 1rem;
-        margin-bottom: 1rem;
-        font-weight: 600;
-        @include tablet {
-            width: 20vw;
-
-        }
+    @include desktop {
+      padding-top: 2rem;
     }
+  }
+  &__face {
+    @include tabet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  &__date {
+    color: #afafaf;
+  }
+  &__time {
+    font-weight: 600;
+  }
+  &__venue {
+    color: #afafaf;
+  }
+  &__location {
+    color: #afafaf;
+  }
+  &__button {
+    height: 4vh;
+    width: 90vw;
+    background-color: #323232;
+    color: white;
+    border-radius: 0.25rem;
+    border-style: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    @include tablet {
+      width: 20vw;
+      height: 5vh;
+      margin: 0;
+    }
+  }
+  &__hovers {
+    background-color: #E1E1E1;
+  }
 }
