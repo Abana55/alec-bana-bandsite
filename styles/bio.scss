@@ -78,7 +78,6 @@
       font-size: 1.25rem;
     }
   }
-
   &__name {
     font-weight: 500;
     margin: 0;
@@ -174,8 +173,6 @@
 }
 
 .comment {
-  @include tablet {
-  }
   &__submission {
     display: flex;
     flex-direction: column;
@@ -203,10 +200,12 @@
     margin-top: 1rem;
     height: 7vh;
     @include tablet {
-      width: 20vw;
+      width: 18vw;
       position: relative;
-      left: 67%;
+      left: 68%;
       height: 6vh;
+      padding: 1rem;
+      margin: 1rem;
     }
     :hover {
       color: #000000;
@@ -216,8 +215,13 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    align-items: center;
     @include tablet {
       padding-left: 5rem;
+
+    }
+    @include desktop {
+      padding: 1rem;
     }
   }
   &__name-input {
@@ -239,12 +243,21 @@
   &__name-input.active {
     border: 0.0625rem solid #323232;
   }
+  &__name-input:invalid {
+    border: 1px solid #D22D2D;
+
+  }
   &__comment-input {
     padding: 1rem;
     padding-right: 1rem;
     border-radius: 0.25rem;
     border: 0.0625rem solid #e1e1e1;
     background-color: #fafafa;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  &__comment-input:invalid {
+    border: 2px solid #D22D2D;
+
   }
   &__box {
     display: flex;
@@ -254,6 +267,9 @@
     justify-content: space-around;
     @include tablet {
       width: 80%;
+    }
+    @include desktop {
+      width: 50%;
     }
   }
   &__section {
@@ -270,7 +286,7 @@
   &__date {
     color: #afafaf;
   }
-  }
+
   &__area {
     width: 100%;
   }
@@ -303,7 +319,7 @@
     border-radius: 50%;
     margin-top: 1rem;
   }
-
+}
 .container {
   display: flex;
   flex-direction: column;

@@ -18,7 +18,7 @@ let comments = [
 
   const container = document.querySelector('.container');
   const form = document.querySelector('.comment__form');
-  
+
 function displayComments() {
     container.innerHTML = '';
 
@@ -96,4 +96,4 @@ function handleFormSubmit(event) {
 
 
 form.addEventListener('submit', handleFormSubmit);
-displayCommets();
+displayComments();

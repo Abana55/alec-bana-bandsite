@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Avenir";
-  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTPro.ttf") format(truetype) font-weight 400;
+  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTPro.ttf") format("truetype") font-weight 400;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProDemi.ttf") format(truetype) font-weight 600;
+  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProDemi.ttf") format("truetype") font-weight 600;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProBold.ttf") format(truetype);
+  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 * {
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
 }
 
 body {
@@ -585,10 +585,12 @@ body {
 }
 @media (min-width: 768px) {
   .comment__button {
-    width: 20vw;
+    width: 18vw;
     position: relative;
-    left: 67%;
+    left: 68%;
     height: 6vh;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 .comment__button :hover {
@@ -598,10 +600,16 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  align-items: center;
 }
 @media (min-width: 768px) {
   .comment__form {
     padding-left: 5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__form {
+    padding: 1rem;
   }
 }
 .comment__name-input {
@@ -623,12 +631,19 @@ body {
 .comment__name-input.active {
   border: 0.0625rem solid #323232;
 }
+.comment__name-input:invalid {
+  border: 1px solid #D22D2D;
+}
 .comment__comment-input {
   padding: 1rem;
   padding-right: 1rem;
   border-radius: 0.25rem;
   border: 0.0625rem solid #e1e1e1;
   background-color: #fafafa;
+  border-bottom: 1px solid #E1E1E1;
+}
+.comment__comment-input:invalid {
+  border: 2px solid #D22D2D;
 }
 .comment__box {
   display: flex;
@@ -640,6 +655,11 @@ body {
 @media (min-width: 768px) {
   .comment__box {
     width: 80%;
+  }
+}
+@media (min-width: 1280px) {
+  .comment__box {
+    width: 50%;
   }
 }
 .comment__section {
@@ -655,9 +675,6 @@ body {
 }
 .comment__date {
   color: #afafaf;
-}
-.comment:nth-child(n+1) .show__date {
-  display: none;
 }
 .comment__area {
   width: 100%;
