@@ -12,7 +12,7 @@
   &__title {
     font-size: 1.5rem;
     position: relative;
-    color: #323232;
+    color: $band-site-black;
     @include tablet {
       font-size: 2rem;
       font-weight: 500;
@@ -121,7 +121,7 @@
 }
 
 .gallery {
-  background-color: #fafafa;
+  background-color: $alabaster;
   @include tablet {
     width: 100%;
   }
@@ -131,7 +131,7 @@
     padding-top: 1rem;
     font-size: 1.5rem;
     font-weight: 400;
-    color: #323232;
+    color: $band-site-black;
     @include tablet {
       font-size: 2rem;
       font-weight: 600;
@@ -181,7 +181,7 @@
   }
   &__title {
     padding-left: 1.5rem;
-    color: #323232;
+    color: $band-site-black;
     font-size: 0.5rem;
     @include tablet {
       font-size: 2.75rem;
@@ -191,8 +191,8 @@
   }
   &__button {
     border-style: none;
-    background-color: #323232;
-    color: white;
+    background-color: $band-site-black;
+    color: $white;
     border-radius: 0.25rem;
     padding: 1rem;
     font-size: 1rem;
@@ -208,7 +208,7 @@
       margin: 1rem;
     }
     :hover {
-      color: #000000;
+      color: $bandsite-darkblack;
     }
   }
   &__form {
@@ -226,22 +226,22 @@
   }
   &__name-input {
     border-radius: 0.25rem;
-    border: 0.0625rem solid #e1e1e1;
+    border: 0.0625rem solid $mercury;
     padding: 0.7rem;
-    background-color: #fafafa;
+    background-color: $alabaster;
   }
   &__label-1 {
-    color: #afafaf;
+    color: $silver;
     font-size: 0.7rem;
     padding: 0.5rem;
   }
   &__label-2 {
-    color: #afafaf;
+    color: $silver;
     font-size: 0.7rem;
     padding: 0.5rem;
   }
   &__name-input.active {
-    border: 0.0625rem solid #323232;
+    border: 0.0625rem solid $band-site-black;
   }
   &__name-input:invalid {
     border: 1px solid #D22D2D;
@@ -251,9 +251,9 @@
     padding: 1rem;
     padding-right: 1rem;
     border-radius: 0.25rem;
-    border: 0.0625rem solid #e1e1e1;
-    background-color: #fafafa;
-    border-bottom: 1px solid #E1E1E1;
+    border: 0.0625rem solid $mercury;
+    background-color: $alabaster;
+    border-bottom: 1px solid $mercury;
   }
   &__comment-input:invalid {
     border: 2px solid #D22D2D;
@@ -261,7 +261,7 @@
   }
   &__box {
     display: flex;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid $mercury;
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -284,7 +284,7 @@
     font-weight: 600;
   }
   &__date {
-    color: #afafaf;
+    color: $silver;
   }
 
   &__area {
@@ -296,7 +296,7 @@
     display: flex;
     @include tablet {
       justify-content: center;
-      border-bottom: 1px solid #E1E1E1;
+      border-bottom: 1px solid $mercury;
     }
   }
   &__input {
@@ -312,7 +312,7 @@
     display: flex;
   }
   &__icon {
-    background-color: #e1e1e1;
+    background-color: $mercury;
     height: 3rem;
     width: 3rem;
     margin: 1rem;

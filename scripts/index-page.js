@@ -19,12 +19,12 @@ let comments = [
   const container = document.querySelector('.container');
   const form = document.querySelector('.comment__form');
 
-function displayComments() {
+function displayComment() {
     container.innerHTML = '';
 
   for (let i = 0; i < comments.length; i++ ) {
 
-  const commentBox = document.createElement('div');
+  const commentBox = document.createElement('section');
   commentBox.classList.add('comment__box');
 
   let commentContainer = document.createElement('div');
@@ -58,7 +58,7 @@ container.appendChild(commentBox);
 
 }
 }
-displayComments();
+displayComment();
 
 
 function makeNewComment() {
@@ -80,7 +80,7 @@ function makeNewComment(commenter, comment) {
         };
 
         comments.unshift(newComment);
-        displayComments();
+        displayComment();
 }
 
 function handleFormSubmit(event) {
@@ -96,4 +96,4 @@ function handleFormSubmit(event) {
 
 
 form.addEventListener('submit', handleFormSubmit);
-displayComments();
+displayComment();
