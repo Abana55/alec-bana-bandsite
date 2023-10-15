@@ -1,38 +1,40 @@
-let shows = [
-    {
-      "Date": "MON Sept 06 2021",
-      "Venue": "Ronald Lane",
-      "Location": 'San Francisco, CA',
-    },
-    {
-      "Date": "Tue Sept 21 2021",
-      "Venue": "Pier 3 East",
-      "Location": 'San Francisco, CA',
-    },
-    {
-      "Date": "Fri Oct 15 2021",
-      "Venue": "View Lounge",
-      "Location": 'San Francisco, CA',
-    },
-    {
-      "Date": "Sat Nov 06 2021",
-      "Venue": "Hyatt Agency",
-      "Location": 'San Francisco, CA',
-    },
-    {
-      "Date": "Fri Nov 26 2021",
-      "Venue": "Moscow Center",
-      "Location": 'San Francisco, CA',
-    },
-    {
-      "Date": "Wed Dec 15 2021",
-      "Venue": "Press Club",
-      "Location": 'San Francisco, CA',
-    },
-  ];
+// let shows = [
+//     {
+//       "Date": "MON Sept 06 2021",
+//       "Venue": "Ronald Lane",
+//       "Location": 'San Francisco, CA',
+//     },
+//     {
+//       "Date": "Tue Sept 21 2021",
+//       "Venue": "Pier 3 East",
+//       "Location": 'San Francisco, CA',
+//     },
+//     {
+//       "Date": "Fri Oct 15 2021",
+//       "Venue": "View Lounge",
+//       "Location": 'San Francisco, CA',
+//     },
+//     {
+//       "Date": "Sat Nov 06 2021",
+//       "Venue": "Hyatt Agency",
+//       "Location": 'San Francisco, CA',
+//     },
+//     {
+//       "Date": "Fri Nov 26 2021",
+//       "Venue": "Moscow Center",
+//       "Location": 'San Francisco, CA',
+//     },
+//     {
+//       "Date": "Wed Dec 15 2021",
+//       "Venue": "Press Club",
+//       "Location": 'San Francisco, CA',
+//     },
+//   ];
+  const backendShows = new BandSiteAPI('840eb569-93a6-452b-be2e-81f83a8c8c9b')
   
   const main = document.querySelector('main');
   const showTitle = document.createElement('h2');
+
   showTitle.classList.add('show__title');
   showTitle.innerText = 'Shows';
   main.appendChild(showTitle);
@@ -40,6 +42,8 @@ let shows = [
   const container = document.createElement('section');
   container.classList.add('show__section');
 
+ async function displayShows() {
+  const shows = await backendShows.getShows()
 
   for (let i = 0; i < shows.length; i++ ) {
     const showBox = document.createElement('section');
@@ -56,7 +60,7 @@ let shows = [
 
     let showTime = document.createElement('p');
     showTime.classList.add('show__time');
-    showTime.textContent = shows[i].Date;
+    showTime.textContent = new Date (shows[i].date).toDateString();
     showFace.appendChild(showTime);
 
     let showHall = document.createElement('div');
@@ -70,7 +74,7 @@ let shows = [
     
     let showPlace = document.createElement('p');
     showPlace.classList.add('show__place');
-    showPlace.textContent = shows[i].Venue;
+    showPlace.textContent = shows[i].place;
     showHall.appendChild(showPlace);
 
     let showSpot = document.createElement('div');
@@ -84,7 +88,7 @@ let shows = [
 
     let showLocal = document.createElement('p');
     showLocal.classList.add('show__local');
-    showLocal.textContent = shows[i].Location;
+    showLocal.textContent = shows[i].location;
     showSpot.appendChild(showLocal);
 
     let showButton = document.createElement('button');
@@ -96,8 +100,8 @@ let shows = [
 
 
   }
-
-
+ };
+displayShows();
 main.appendChild(container);
 
 const showHover = document.querySelectorAll('.show__box');
