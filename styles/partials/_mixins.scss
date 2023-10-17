@@ -13,25 +13,14 @@
     }
 }
 
-@font-face {
-    font-family: 'Avenir';
-    src: url('../../assets/fonts/AvenirNextLTPro-Bold.otf') format('opentype'),
-        url('../../assets/fonts/alternative-files/AvenirNextLTPro.ttf') format('truetype')
-    font-weight 400;
-}
-
-@font-face {
-    font-family: 'Avenir-light-bold';
-    src: url('../../assets/Font/AvenirNextLTPro-Demi.otf') format('opentype'),
-        url('../../assets/fonts/alternative-files/AvenirNextLTProDemi.ttf') format('truetype')
-    font-weight 600;
-}
-
-@font-face {
-    font-family: 'Avenir-bold';
-    src: url('../../assets/Font/AvenirNextLTPro-Bold.otf') format('opentype'),
-         url('../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf') format('truetype');
-    font-weight: 700;
+@mixin button {
+    border-style: none;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    height: 7vh;
 }
 
 

@@ -1,4 +1,3 @@
-
   const backendShows = new BandSiteAPI('840eb569-93a6-452b-be2e-81f83a8c8c9b')
   
   const main = document.querySelector('main');
@@ -66,10 +65,9 @@
     showBox.appendChild(showButton)
 
     container.appendChild(showBox);
-
-
   }
  };
+ 
 displayShows();
 main.appendChild(container);
 

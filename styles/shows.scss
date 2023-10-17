@@ -16,12 +16,12 @@
       width: 60vw;
     }
     :hover {
-        background-color: #FAFAFA;
+        background-color: $alabaster;
     }
 
   }
   &__box {
-    border-bottom: 0.0625rem solid #e1e1e1;
+    border-bottom: 0.0625rem solid $mercury;
     @include tablet {
       display: flex;
       flex-direction: row;
@@ -47,29 +47,29 @@
     }
   }
   &__face {
-    @include tabet {
+    @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
   }
   &__date {
-    color: #afafaf;
+    color: $silver;
   }
   &__time {
     font-weight: 600;
   }
   &__venue {
-    color: #afafaf;
+    color: $silver;
   }
   &__location {
-    color: #afafaf;
+    color: $silver;
   }
   &__button {
     height: 4vh;
     width: 90vw;
-    background-color: #323232;
-    color: white;
+    background-color: $band-site-black;
+    color: $white;
     border-radius: 0.25rem;
     border-style: none;
     font-size: 1rem;
@@ -82,6 +82,6 @@
     }
   }
   &__hovers {
-    background-color: #E1E1E1;
+    background-color: $mercury;
   }
 }

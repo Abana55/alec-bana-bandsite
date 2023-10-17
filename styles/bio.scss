@@ -8,6 +8,7 @@
   font-weight: 300;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: $white;
 
   &__title {
     font-size: 1.5rem;
@@ -190,15 +191,9 @@
     }
   }
   &__button {
-    border-style: none;
     background-color: $band-site-black;
     color: $white;
-    border-radius: 0.25rem;
-    padding: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 1rem;
-    height: 7vh;
+    @include button{
     @include tablet {
       width: 18vw;
       position: relative;
@@ -209,6 +204,7 @@
     }
     :hover {
       color: $bandsite-darkblack;
+    }
     }
   }
   &__form {

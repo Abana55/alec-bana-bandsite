@@ -1,30 +1,31 @@
 @font-face {
   font-family: "Avenir";
-  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTPro.ttf") format(truetype) font-weight 400;
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTPro.ttf") format("truetype") font-weight 400;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProDemi.ttf") format(truetype) font-weight 600;
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTProDemi.ttf") format("truetype") font-weight 600;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/Font/AlternativeFiles/AvenirNextLTProBold.ttf") format(truetype);
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 * {
-  font-family: "Avenir";
+  font-family: "Avenir", sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: white;
+  background-color: #FFFFFF;
+  font-family: "Avenir", sans-serif;
 }
 
 .band {
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
 }
-.band__head--title {
+.band__head-title {
   display: flex;
   height: 1.25rem;
   width: 60vw;
@@ -32,7 +33,7 @@ body {
   padding-top: 1.5rem;
 }
 @media (min-width: 768px) {
-  .band__head--title {
+  .band__head-title {
     height: 1.25rem;
     padding-right: 2rem;
     padding-left: 0;
@@ -61,53 +62,50 @@ body {
     padding-top: 2rem;
   }
 }
-.band__navi--links {
+.band__navi-link {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding-top: 1rem;
   width: 100vw;
-  text-decoration: none;
-  list-style: none;
 }
 @media (min-width: 768px) {
-  .band__navi--links {
+  .band__navi-link {
     padding-top: 0;
   }
 }
-.band__navi--link-1 {
+.band__navi-link-1 {
   width: 50%;
   padding-right: 0rem;
   display: flex;
   justify-content: center;
+  list-style: none;
 }
-.band__navi--link-1 :hover {
-  border-bottom: 0.1875rem solid white;
-  font-weight: 500;
+.band__navi-link-1 :hover {
+  border-bottom: 0.1875rem solid #FFFFFF;
   width: 50%;
 }
-.band__navi--link-2 {
+.band__navi-link-2 {
   width: 50%;
   margin: 0;
   padding-left: 3rem;
   display: flex;
   justify-content: center;
 }
-.band__navi--link-2 :hover {
-  border-bottom: 0.1875rem solid white;
-  font-weight: 500;
+.band__navi-link-2 :hover {
+  border-bottom: 0.1875rem solid #FFFFFF;
 }
-.band__navi--link-1.active {
+.band__navi-link-1.active {
   font-weight: 700;
   border-bottom: 0.1875rem solid white;
 }
-.band__navi--link-2.active {
+.band__navi-link-2.active {
   font-weight: 700;
   border-bottom: 0.1875rem solid white;
 }
-.band__navi--anchor {
+.band__navi-anchor {
   padding-bottom: 1rem;
-  border-bottom: 1px #FAFAFA;
+  border-bottom: 1px #fafafa;
   text-decoration: none;
   color: white;
 }
@@ -143,18 +141,36 @@ body {
     height: 80vh;
   }
 }
-.band__head--img {
+.band__head-img {
   font-size: 2rem;
   padding-left: 1rem;
-  font-weight: 500;
   background-position: center;
   margin: 0;
 }
 @media (min-width: 768px) {
-  .band__head--img {
+  .band__head-img {
     font-size: 3.75rem;
     height: 15vh;
     padding-top: 1rem;
+  }
+}
+.band__head-img-2 {
+  font-size: 2rem;
+  padding-left: 1rem;
+  background-position: center;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .band__head-img-2 {
+    font-size: 3.75rem;
+    height: 15vh;
+    padding-top: 1rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .band__head-img-2 {
+    margin: 0;
   }
 }
 .band__head-2 {
@@ -230,7 +246,7 @@ body {
 
 .foot {
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   padding-left: 1rem;
 }
@@ -248,9 +264,6 @@ body {
     padding-right: 8rem;
   }
 }
-.foot__social {
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   .foot__social {
     display: flex;
@@ -259,22 +272,21 @@ body {
     height: 10vh;
   }
 }
-.foot__social--title {
-  font-weight: 400;
+.foot__social-title {
   padding-top: 2rem;
 }
 @media (min-width: 768px) {
-  .foot__social--title {
+  .foot__social-title {
     font-size: 2rem;
     padding: 0;
     font-weight: 600;
   }
 }
-.foot__social--img {
+.foot__social-img {
   padding-right: 1.5rem;
 }
 @media (min-width: 768px) {
-  .foot__social--img {
+  .foot__social-img {
     height: 3vh;
     padding-left: 2rem;
   }
@@ -285,42 +297,36 @@ body {
     padding-top: 2rem;
   }
 }
-.foot__contacts {
+.foot__contact {
   list-style: none;
   padding: 0;
-  font-weight: 700;
 }
 @media (min-width: 768px) {
-  .foot__contacts {
+  .foot__contact {
     margin: 0;
   }
 }
-.foot__contacts--booking {
+.foot__contact-booking {
   margin: 0;
   padding: 0;
-  font-weight: 400;
 }
 @media (min-width: 768px) {
-  .foot__contacts--booking {
+  .foot__contact-booking {
     width: 73%;
     padding-top: 1rem;
   }
 }
-.foot__contacts--address {
+.foot__contact-address {
   width: auto;
-  font-weight: 400;
 }
 @media (min-width: 768px) {
-  .foot__contacts--address {
+  .foot__contact-address {
     width: 72%;
     padding-top: 1rem;
   }
 }
-.foot__contacts--email {
-  font-weight: 400;
-}
 @media (min-width: 768px) {
-  .foot__contacts--email {
+  .foot__contact-email {
     margin: 0;
     padding-top: 1rem;
   }
@@ -365,7 +371,7 @@ body {
   background-color: #FAFAFA;
 }
 .show__box {
-  border-bottom: 0.0625rem solid #e1e1e1;
+  border-bottom: 0.0625rem solid #E1E1E1;
 }
 @media (min-width: 768px) {
   .show__box {
@@ -394,23 +400,30 @@ body {
     padding-top: 2rem;
   }
 }
+@media (min-width: 768px) {
+  .show__face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .show__date {
-  color: #afafaf;
+  color: #AFAFAF;
 }
 .show__time {
   font-weight: 600;
 }
 .show__venue {
-  color: #afafaf;
+  color: #AFAFAF;
 }
 .show__location {
-  color: #afafaf;
+  color: #AFAFAF;
 }
 .show__button {
   height: 4vh;
   width: 90vw;
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
   border-radius: 0.25rem;
   border-style: none;
   font-size: 1rem;

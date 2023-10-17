@@ -3,12 +3,12 @@
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTPro.ttf") format("truetype") font-weight 400;
 }
 @font-face {
-  font-family: "Avenir-light-bold";
-  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTProDemi.ttf") format("truetype") font-weight 600;
+  font-family: "Avenir";
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTProDemi.ttf") format("truetype") font-weight 600;
 }
 @font-face {
-  font-family: "Avenir-bold";
-  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf") format("truetype");
+  font-family: "Avenir";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"), url("../../assets/fonts/alternative-files/AvenirNextLTProBold.ttf") format("truetype");
   font-weight: 700;
 }
 * {
@@ -17,16 +17,13 @@
 
 body {
   margin: 0;
-  background-color: white;
-}
-
-li {
-  list-style: none;
+  background-color: #FFFFFF;
+  font-family: "Avenir", sans-serif;
 }
 
 .band {
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
 }
 .band__head-title {
   display: flex;
@@ -71,8 +68,6 @@ li {
   margin: 0;
   padding-top: 1rem;
   width: 100vw;
-  text-decoration: none;
-  list-style: none;
 }
 @media (min-width: 768px) {
   .band__navi-link {
@@ -84,10 +79,10 @@ li {
   padding-right: 0rem;
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 .band__navi-link-1 :hover {
   border-bottom: 0.1875rem solid #FFFFFF;
-  font-weight: 500;
   width: 50%;
 }
 .band__navi-link-2 {
@@ -99,7 +94,6 @@ li {
 }
 .band__navi-link-2 :hover {
   border-bottom: 0.1875rem solid #FFFFFF;
-  font-weight: 500;
 }
 .band__navi-link-1.active {
   font-weight: 700;
@@ -147,18 +141,36 @@ li {
     height: 80vh;
   }
 }
-.band__head__head-img {
+.band__head-img {
   font-size: 2rem;
   padding-left: 1rem;
-  font-weight: 500;
   background-position: center;
   margin: 0;
 }
 @media (min-width: 768px) {
-  .band__head__head-img {
+  .band__head-img {
     font-size: 3.75rem;
     height: 15vh;
     padding-top: 1rem;
+  }
+}
+.band__head-img-2 {
+  font-size: 2rem;
+  padding-left: 1rem;
+  background-position: center;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .band__head-img-2 {
+    font-size: 3.75rem;
+    height: 15vh;
+    padding-top: 1rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .band__head-img-2 {
+    margin: 0;
   }
 }
 .band__head-2 {
@@ -252,9 +264,6 @@ li {
     padding-right: 8rem;
   }
 }
-.foot__social {
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   .foot__social {
     display: flex;
@@ -264,7 +273,6 @@ li {
   }
 }
 .foot__social-title {
-  font-weight: 400;
   padding-top: 2rem;
 }
 @media (min-width: 768px) {
@@ -301,7 +309,6 @@ li {
 .foot__contact-booking {
   margin: 0;
   padding: 0;
-  font-weight: 400;
 }
 @media (min-width: 768px) {
   .foot__contact-booking {
@@ -311,16 +318,12 @@ li {
 }
 .foot__contact-address {
   width: auto;
-  font-weight: 400;
 }
 @media (min-width: 768px) {
   .foot__contact-address {
     width: 72%;
     padding-top: 1rem;
   }
-}
-.foot__contact-email {
-  font-weight: 400;
 }
 @media (min-width: 768px) {
   .foot__contact-email {
@@ -355,6 +358,7 @@ li {
   font-weight: 300;
   padding-left: 1rem;
   padding-right: 1rem;
+  background-color: #FFFFFF;
 }
 .music__title {
   font-size: 1.5rem;
@@ -574,17 +578,6 @@ li {
     padding-left: 4.5rem;
     padding-top: 2rem;
   }
-}
-.comment__button {
-  border-style: none;
-  background-color: #323232;
-  color: #FFFFFF;
-  border-radius: 0.25rem;
-  padding: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 1rem;
-  height: 7vh;
 }
 @media (min-width: 768px) {
   .comment__button {
