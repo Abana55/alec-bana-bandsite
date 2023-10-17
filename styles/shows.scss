@@ -66,12 +66,9 @@
     color: $silver;
   }
   &__button {
+    @include button;
     height: 4vh;
     width: 90vw;
-    background-color: $band-site-black;
-    color: $white;
-    border-radius: 0.25rem;
-    border-style: none;
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 600;

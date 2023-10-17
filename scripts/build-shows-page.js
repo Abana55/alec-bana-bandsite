@@ -73,11 +73,11 @@ main.appendChild(container);
 
 const showHover = document.querySelectorAll('.show__box');
 
-showHover.forEach((show) => 
+showHover.forEach((show) => {
 show.addEventListener("click", () => {
   showHover.forEach((showBox) => 
   showBox.classList.remove("show__hovers"),
     );
   show.classList.add("show__hovers");
   })
-);
+});

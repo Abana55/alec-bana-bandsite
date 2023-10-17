@@ -1,5 +1,5 @@
 @use "./partials/mixins" as *;
-@use "./partials/variables" as *;
+@use "../styles/partials/variables" as *;
 @use "./partials/globals" as *;
 
 .music {
@@ -191,9 +191,7 @@
     }
   }
   &__button {
-    background-color: $band-site-black;
-    color: $white;
-    @include button{
+    @include button;
     @include tablet {
       width: 18vw;
       position: relative;
@@ -206,7 +204,6 @@
       color: $bandsite-darkblack;
     }
     }
-  }
   &__form {
     display: flex;
     flex-direction: column;

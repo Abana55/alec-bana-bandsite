@@ -80,6 +80,7 @@ body {
   display: flex;
   justify-content: center;
   list-style: none;
+  padding-right: 1rem;
 }
 .band__navi-link-1 :hover {
   border-bottom: 0.1875rem solid #FFFFFF;
@@ -95,19 +96,11 @@ body {
 .band__navi-link-2 :hover {
   border-bottom: 0.1875rem solid #FFFFFF;
 }
-.band__navi-link-1.active {
-  font-weight: 700;
-  border-bottom: 0.1875rem solid white;
-}
-.band__navi-link-2.active {
-  font-weight: 700;
-  border-bottom: 0.1875rem solid white;
-}
 .band__navi-anchor {
   padding-bottom: 1rem;
-  border-bottom: 1px #fafafa;
+  border-bottom: 1px #FAFAFA;
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
 }
 .band__head {
   background: url(/assets/images/hero-bio.jpg);
@@ -420,12 +413,16 @@ body {
   color: #AFAFAF;
 }
 .show__button {
-  height: 4vh;
-  width: 90vw;
   background-color: #323232;
   color: #FFFFFF;
-  border-radius: 0.25rem;
   border-style: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  height: 4vh;
+  width: 90vw;
   font-size: 1rem;
   margin-bottom: 1rem;
   font-weight: 600;
